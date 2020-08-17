@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Retailing System</title>
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-home">
+        <a href="#" id="home"><i class="fa fa-rocket fa-2x" aria-hidden="true"></i>retail.</a>
+    </div>
+    <div class="navbar-elements">
+        <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Sales</a><br>
+    </div>
+    <div class="navbar-elements-title">
+        <label>ANALYZE</label><br>
+    </div>
+    <div class="navbar-elements">
+        <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>Reports</a><br>
+    </div>
+    <div class="navbar-elements-title">
+        <label>MANAGE</label>
+    </div>
+    <div class="navbar-elements">
+        <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Customers</a><br>
+        <a href="#"><i class="fa fa-cube" aria-hidden="true"></i>Products</a><br>
+    </div>
+</div>
+
+<div class="content-box">
+    <div class="content">
+        <label for="date-picker">Date:</label><br>
+        <input type="date" id="date-picker" name="date-picker"> <br><br>
+        <button type="button"><</button>
+        <button type="button">></button>
+        <button type="button">Today</button><br><br><br>
+        <table width=100%>
+            <tr>
+                <th>ID</th>
+                <th>Sold items</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pancit canton</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bread</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Coke</td>
+            </tr>
+        </table>
+
+        <div class="content-box-bottom">
+            <button type="button" id="add-button">Add sale</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

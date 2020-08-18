@@ -42,19 +42,13 @@
         <table width=100%>
             <tr>
                 <th>ID</th>
-                <th>Sold items</th>
+                <th>Amount</th>
+                <th>Details</th>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Pancit canton</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Bread</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Coke</td>
+            <tr th:each="sale : ${sales}">
+                <td th:text="${sale.id}"></td>
+                <td th:text="${sale.amount}"></td>
+                <td th:text="${sale.details}"></td>
             </tr>
         </table>
 
